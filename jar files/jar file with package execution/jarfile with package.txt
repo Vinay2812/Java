@@ -1,0 +1,12 @@
+create folder -> add .java files ->compile the .java files->then follow the steps
+
+1.create manifest.txt file -->
+  -in manifest file write -> 
+	Main-Class: packagename.classname(which has main){press enter without anything}
+
+2.In cmd write -(to compile and create jar file)-->
+  jar -cvmf manifest.txt outputjarfilename.jar package1/*.class package2/*.class *.class
+					       (For Multiple package with class) (for without package) 
+
+3.to run jar file -->
+  java -jar outputjarfilename.jar

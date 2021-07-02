@@ -1,0 +1,46 @@
+import java.sql.*;
+import java.awt.*;
+import java.awt.event.*;
+import javax.swing.*;
+
+public class UserLogin implements ActionListener{
+	JFrame f;
+	JLabel title,userName,userPassword;
+	JTextField name;
+	JPasswordField password;
+	JButton login;
+	Connection con;
+	PreparedStatement ps;
+	ResultSet rs;
+	
+	UserLogin()
+	{
+		f=new JFrame("User Login");
+		f.setLayout(null);
+		
+		title=new JLabel("WELCOME TO SGU STUDENT PORTAL LOGIN");
+		title.setFont(new Font("Arial",Font.BOLD,16));
+		title.setForeground(Color.RED);
+		title .setBounds(95,40,500,40);
+		f.add(title);
+		f.setSize(600,500);
+		f.setResizable(false);
+		f.setLocationRelativeTo(null);
+		f.setVisible(true);
+		f.setFocusable(true);
+		f.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+	}
+
+	public static void main(String[] args) {
+		
+			new UserLogin();
+
+	}
+
+	@Override
+	public void actionPerformed(ActionEvent e) {
+		
+		
+	}
+
+}

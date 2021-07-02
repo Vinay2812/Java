@@ -1,0 +1,8 @@
+1.create manifest.txt file
+  -in manifest file write -> Main-Class:classname(which has main){press enter without anything}
+
+2.In cmd write -(to compile and create jar file)
+  jar -cvmf manifest.txt outputjarfilename.jar *.class
+
+3.to run jar file -
+  java -jar outputjarfilename.jar

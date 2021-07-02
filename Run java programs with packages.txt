@@ -1,0 +1,16 @@
+//compile and run java files without packages
+
+to compile - 
+javac classname.java
+
+to run -
+java classname
+
+//compile and run java files with packages
+
+to compile - 
+javac -d . classname.java
+(we need to compile all classes before main class compilation)
+
+to run -
+java packagename.classname
